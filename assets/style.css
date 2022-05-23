@@ -1,65 +1,107 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Odibee+Sans&display=swap');
 
+/*===========GERAL===========*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
-  font-family: 'Roboto', sans-serif;
 }
 
-body {
-  width: 100%;
+img {
+  max-width: 40rem;
+}
+
+/*===========MAIN===========*/
+main {
+  width: 100vw;
   height: 100vh;
 
   display: flex;
-  flex-direction: column;
-
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
 
-  background-color: rgb(32, 32, 32);
+  background-color: #f9a826;
+}
+/* ===========CONTAINER===========*/
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.container {
-  max-width: 18.75rem;
+.container .logo h1 {
+  font-family: 'Odibee Sans', cursive;
 
+  color: black;
+  text-align: center;
+  font-size: 7rem;
+
+  margin-bottom: 1rem;
+
+  font-weight: 700;
+}
+
+/*===========INPUT===========*/
+.group-input {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+
+.group-input input {
+  padding: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+
+  margin-bottom: 1rem;
+
+  outline: none;
+}
+
+.group-input input::placeholder {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 0.8rem;
+  color: hsl(0, 0%, 0%, 0.4);
+}
+
+/*===========BUTTON===========*/
+button {
+  border: none;
+  border-radius: 0.5rem;
+
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+
+  color: #fff;
   background-color: rgb(0, 0, 0);
 
-  /* margin: auto; */
+  font-size: 1rem;
 
-  padding: 1.25rem;
-  border-radius: 0.625rem;
-}
+  padding: 0.7rem 1rem;
 
-.container h1 {
-  margin-bottom: 1rem;
-  color: #fff;
-
-  text-align: center;
-}
-
-input {
-  width: 100%;
-  display: inline-block;
-  padding: 0.3rem;
-
-  margin-bottom: 0.625rem;
-}
-
-button {
   cursor: pointer;
 
-  margin-bottom: 1rem;
+  transition: color 0.3s;
+
+  margin-bottom: 2rem;
+}
+
+button:hover {
+  background-color: hsl(0, 0%, 11%);
+  transform: scale(1.05);
 }
 
 #resultado {
-  padding: 1rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.25rem;
 
-  color: #fff;
   text-align: center;
+
+  font-weight: 700;
 }
 
 #resultado p {
-  margin-bottom: 0.2rem;
+  margin-bottom: 0.5rem;
 }
