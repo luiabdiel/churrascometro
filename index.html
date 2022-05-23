@@ -4,34 +4,43 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Churrascômetro</title>
+    <title>Churrascometro</title>
     <link rel="stylesheet" href="./assets/style.css" />
   </head>
   <body>
-    <div class="container">
-      <h1>Churrascômetro</h1>
-      <input
-        type="number"
-        name="adultos"
-        id="adultos"
-        placeholder="Quantos adultos?"
-      />
-      <input
-        type="number"
-        name="criancas"
-        id="criancas"
-        placeholder="Quantas crianças?"
-      />
-      <input
-        type="number"
-        name="duracao"
-        id="duracao"
-        placeholder="Qual a duração?"
-      />
-      <button onclick="calcular()">Calcular</button>
+    <main>
+      <img src="./assets/image/undraw_empty_cart_co35.svg" alt="Person image" />
 
-      <div id="resultado"></div>
-    </div>
-    <script src=".//assets/script.js"></script>
+      <div class="container">
+        <div class="logo">
+          <h1>Churrascômetro</h1>
+        </div>
+        <div class="group-input">
+          <input
+            type="number"
+            name="adultos"
+            id="adultos"
+            placeholder="Quantos adultos?"
+          />
+          <input
+            type="number"
+            name="criancas"
+            id="criancas"
+            placeholder="Quantas crianças?"
+          />
+          <input
+            type="number"
+            name="duracao"
+            id="duracao"
+            placeholder="Qual a duração?"
+          />
+
+          <button onclick="calcular()">Calcular</button>
+        </div>
+
+        <div id="resultado"></div>
+      </div>
+    </main>
+    <script src="./assets/script.js"></script>
   </body>
 </html>
