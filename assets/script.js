@@ -24,7 +24,7 @@ function calcular() {
     bebidasPorPessoa(duracao) * adultos +
     (bebidasPorPessoa(duracao) / 2) * criancas
 
-  resultado.innerHTML = `<p>${quantidadeTotalDeCarne} g de carne</p>`
+  resultado.innerHTML = `<p>${quantidadeTotalDeCarne / 1000} kg de carne</p>`
   resultado.innerHTML += `<p>${Math.ceil(
     quantidadeTotalDeCerveja / 1000
   )} L de cerveja </p>`
