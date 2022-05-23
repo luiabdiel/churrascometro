@@ -49,4 +49,17 @@ input {
 
 button {
   cursor: pointer;
+
+  margin-bottom: 1rem;
+}
+
+#resultado {
+  padding: 1rem;
+
+  color: #fff;
+  text-align: center;
+}
+
+#resultado p {
+  margin-bottom: 0.2rem;
 }
